@@ -22,6 +22,4 @@ COPY --from=build /go/bin/server /server
 
 EXPOSE 8080
 
-USER nonroot:nonroot
-
 ENTRYPOINT ["/server"]
